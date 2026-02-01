@@ -82,6 +82,7 @@ error_threshold = prediction_error.mean() + 3 * prediction_error.std()
 
 ml_anomalies = prediction_error > error_threshold
 
+print(f"Anomaly Threshold (Amps error): {error_threshold:.2f}")
 print("Number of ML-detected anomalies:", ml_anomalies.sum())
 
 
